@@ -8,7 +8,7 @@ var buffer = require('vinyl-buffer');
 var uglify = require('gulp-uglify');
 
 gulp.task('js', function() {
-  return browserify({entries: ['./src/index.js']})
+  return browserify({entries: ['./src/index.js'], standalone: 'screenShooter'})
     .transform('babelify', {presets: ['es2015', 'stage-0']})
     .bundle()
     .pipe(source('./index.js'))
