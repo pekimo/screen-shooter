@@ -27,10 +27,10 @@ screenShooter
 ```
 ## API
 
-Capture;
----
+Capture
+-------
 Make captureVisibleTabs (PNG). More info [here](https://developer.chrome.com/extensions/tabs#method-captureVisibleTab).
-Тo get the screenshot you need to select the format of data (dataUrl of blobUrl).
+Тo get the screenshot you need to select the format of data (dataUrl or blobUrl).
 ```js
 screenShooter
     .capture()

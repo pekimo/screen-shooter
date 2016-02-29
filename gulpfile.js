@@ -4,12 +4,16 @@ var gulp = require('gulp');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var babelify = require('babelify');
+var buffer = require('vinyl-buffer');
+var uglify = require('gulp-uglify');
 
 gulp.task('js', function() {
   return browserify({entries: ['./src/index.js']})
     .transform('babelify', {presets: ['es2015', 'stage-0']})
     .bundle()
     .pipe(source('./index.js'))
+    .pipe(buffer())
+    .pipe(uglify())
     .pipe(gulp.dest('./'));
 });
 
