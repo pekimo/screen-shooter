@@ -1,16 +1,16 @@
 {
   "name": "screen-shooter",
   "version": "0.1.0",
-  "description": "",
+  "description": "Screen-shooter for chrome extensions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "chrome.tabs",
+    "captureVisibleTab",
     "screenshot"
   ],
-  "author": "",
+  "author": "Pavel Evdokimov <salting@bk.ru>",
   "license": "ISC",
   "devDependencies": {
     "babel-preset-es2015": "^6.5.0",
