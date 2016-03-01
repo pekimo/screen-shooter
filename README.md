@@ -1,7 +1,7 @@
 Screen-shooter
 ===============
 
-Screen-shooter is lib for chrome extensions.
+Screen-shooter is a lib for chrome extensions.
 
 ## Dependencies
 Chrome api package "tabs". More info [here](https://developer.chrome.com/extensions/tabs).
@@ -30,7 +30,7 @@ screenShooter
 Capture
 -------
 Make captureVisibleTabs (PNG). More info [here](https://developer.chrome.com/extensions/tabs#method-captureVisibleTab).
-Тo get the screenshot you need to select the format of data (dataUrl or blobUrl).
+You need to select the format of data (dataUrl or blobUrl) to get the screenshot you need.
 ```js
 screenShooter
     .capture()
